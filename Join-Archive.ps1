@@ -1,4 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
+function Get-SHA256([string]$FilePath) {
+ $stream = [IO.File]::OpenRead($FilePath)
+ $hash = [Security.Cryptography.SHA256]::Create()
+ try { return ([BitConverter]::ToString($hash.ComputeHash($stream))).Replace('-', '').ToLowerInvariant() }
+ finally { $hash.Dispose(); $stream.Dispose() }
+}
 Set-Location -LiteralPath $PSScriptRoot
 $metaFile = Join-Path $PSScriptRoot 'parts.json'
 if (-not (Test-Path -LiteralPath $metaFile)) { throw 'Download parts.json from the same Release first.' }
@@ -9,7 +15,7 @@ foreach ($part in $meta.parts) {
  if (-not (Test-Path -LiteralPath $file)) { throw "Missing $($part.name)" }
  if ((Get-Item -LiteralPath $file).Length -ne $part.size) { throw "Wrong size: $($part.name)" }
  Write-Host "Checking $($part.name)"
- if ((Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLower() -ne $part.sha256) { throw "Checksum mismatch: $($part.name)" }
+ if ((Get-SHA256 $file) -ne $part.sha256) { throw "Checksum mismatch: $($part.name)" }
 }
 if ([IO.Path]::GetFileName($meta.archive) -ne $meta.archive) { throw 'Invalid archive name' }
 $output = Join-Path $PSScriptRoot $meta.archive
@@ -23,6 +29,6 @@ try {
   try { $src.CopyTo($dest) } finally { $src.Dispose() }
  }
 } finally { $dest.Dispose() }
-if ((Get-FileHash -LiteralPath $temp -Algorithm SHA256).Hash.ToLower() -ne $meta.sha256) { throw 'Final archive checksum mismatch' }
+if ((Get-SHA256 $temp) -ne $meta.sha256) { throw 'Final archive checksum mismatch' }
 Move-Item -LiteralPath $temp -Destination $output
 Write-Host 'Done. Extract the ZIP, then run ASA-Russian-Voice.exe.'
