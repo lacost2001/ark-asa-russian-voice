@@ -89,7 +89,7 @@ def restore(game,progress=print):
 def gui(package):
  import tkinter as tk
  from tkinter import ttk,filedialog,messagebox
- root=tk.Tk();root.title('ASA — Русская озвучка');root.geometry('760x480');root.configure(bg='#101c28')
+ root=tk.Tk();root.title('ASA — Русская озвучка');root.geometry('800x620');root.configure(bg='#101c28')
  style=ttk.Style();style.theme_use('clam');style.configure('TButton',font=('Segoe UI',11),padding=9)
  tk.Label(root,text='ARK  /  RUSSIAN VOICES',fg='#57d6c7',bg='#101c28',font=('Segoe UI',12,'bold')).pack(anchor='w',padx=28,pady=(26,6))
  tk.Label(root,text='Истории Ковчегов — по-русски',fg='white',bg='#101c28',font=('Segoe UI',23,'bold')).pack(anchor='w',padx=28)
@@ -98,19 +98,29 @@ def gui(package):
  frame=tk.Frame(root,bg='#101c28');frame.pack(fill='x',padx=28,pady=8)
  path=tk.StringVar(value='D:/SteamLibrary/steamapps/common/ARK Survival Ascended');ttk.Entry(frame,textvariable=path,font=('Segoe UI',11)).pack(side='left',fill='x',expand=True)
  ttk.Button(frame,text='Выбрать',command=lambda:path.set(filedialog.askdirectory() or path.get())).pack(side='right',padx=(10,0))
- status=tk.StringVar(value='Полный автономный пакет. Оригиналы сохраняются перед заменой.')
+ tk.Label(root,text='Папка загрузки (нужно около 60 ГБ для частей и распаковки)',fg='white',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28,pady=(12,0))
+ cache=tk.StringVar(value=str(Path.home()/'Downloads/ASA-Russian-Voice-Download'))
+ download_frame=tk.Frame(root,bg='#101c28');download_frame.pack(fill='x',padx=28,pady=8)
+ ttk.Entry(download_frame,textvariable=cache,font=('Segoe UI',11)).pack(side='left',fill='x',expand=True)
+ ttk.Button(download_frame,text='Выбрать',command=lambda:cache.set(filedialog.askdirectory() or cache.get())).pack(side='right',padx=(10,0))
+ status=tk.StringVar(value='Версия 1.1.0. Скачаю 16 частей, проверю и распакую автоматически. Оригиналы игры сохраняются.')
  tk.Label(root,textvariable=status,fg='#d8e4ec',bg='#101c28',wraplength=700,justify='left',font=('Segoe UI',10)).pack(anchor='w',padx=28,pady=20)
  bar=ttk.Progressbar(root,mode='indeterminate');bar.pack(fill='x',padx=28)
  buttons=tk.Frame(root,bg='#101c28');buttons.pack(fill='x',padx=28,pady=24)
  controls=[]
  def run(action):
-  raw=path.get()
+  raw=path.get();cache_path=cache.get()
   for b in controls:b.configure(state='disabled')
   bar.start()
   def progress(text):root.after(0,status.set,text)
   def worker():
    try:
-    if action=='install':install(package,Path(raw),progress)
+    if action=='install':
+     game=locate_game(raw)
+     if running():raise RuntimeError('Закройте ASA перед установкой.')
+     from asa_download import prepare
+     payload=package if (package/'manifest.json').exists() else prepare(Path(cache_path),progress)
+     install(payload,game,progress)
     else:restore(Path(raw),progress)
    except Exception as e:root.after(0,messagebox.showerror,'Установка остановлена',str(e));progress('Операция остановлена. Причина показана в сообщении.')
    finally:
@@ -121,7 +131,7 @@ def gui(package):
   threading.Thread(target=worker,daemon=True).start()
  for label,action in [('Установить / обновить','install'),('Вернуть оригинал','restore')]:
   b=ttk.Button(buttons,text=label,command=lambda a=action:run(a));b.pack(side='left',padx=(0,12));controls.append(b)
- tk.Label(root,text='Перед установкой закройте игру. Для запуска пакета интернет не нужен.',fg='#8799ab',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28)
+ tk.Label(root,text='Закройте игру. Для загрузки нужен интернет. Повторный запуск продолжит прерванную загрузку.',fg='#8799ab',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28)
  root.mainloop()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--game',type=Path);p.add_argument('--package',type=Path);p.add_argument('--originals',type=Path);p.add_argument('--restore',action='store_true');a=p.parse_args()
