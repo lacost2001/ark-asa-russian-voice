@@ -1,0 +1,1162 @@
+{
+  "version": "1.2.0",
+  "game_build": "25691765",
+  "groups": {
+    "Genesis1": {
+      "title": "Genesis: Part 1",
+      "audio_assets": 971,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis1_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis1_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis1_P.ucas",
+          "size": 78398147,
+          "sha256": "d6dd8ef9a0b4a7661a7db68453f02f5d11674af24edeca9d788bbcac7814d7ce",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis1_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis1_P.utoc",
+          "size": 230047,
+          "sha256": "73c7f4156eec24d6b078f4d5f8a4d4d715d44a2a3f79d828e757cd7fdb65932e",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis1_P.utoc"
+        },
+        {
+          "path": "Movies/Gen1_Ending_Female.bk2",
+          "sha256": "2138424681eabf0ffb641e645c5e00342af622284d4cbaed80690b2995936898",
+          "original_sha256": "d72508392aa2626d87d371723dc74298622a77006cdad5779f8bb5234a66b0ae",
+          "size": 1029862468,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.013",
+              "start": 1424032387,
+              "size": 475967613
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.014",
+              "start": 0,
+              "size": 553894855
+            }
+          ]
+        },
+        {
+          "path": "Movies/Gen1_Ending_Male.bk2",
+          "sha256": "2553dcfd5b9e4b1b081b647d2bac9d89de21a722d51e48ca035484bba66dff31",
+          "original_sha256": "d56f21580650cf5a4803f04d9cdd9b5d36c81583ce8566457270808caad8d496",
+          "size": 1029939508,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.014",
+              "start": 553894930,
+              "size": 1029939508
+            }
+          ]
+        }
+      ],
+      "size": 2138430517
+    },
+    "Shared": {
+      "title": "Общие реплики и досье",
+      "audio_assets": 140,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_Shared_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Shared_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Shared_P.ucas",
+          "size": 148655349,
+          "sha256": "087e2e04c0b438a949c7ae5a71c92928838fc3a41099ac55100cc0121415c126",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Shared_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Shared_P.utoc",
+          "size": 57066,
+          "sha256": "6ec0e23f74ac39ca640ddafbfd1ea582d8963c8dfc9f7effb216bf9d20b9a582",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Shared_P.utoc"
+        }
+      ],
+      "size": 148712762
+    },
+    "Aberration": {
+      "title": "Aberration",
+      "audio_assets": 75,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_Aberration_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Aberration_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Aberration_P.ucas",
+          "size": 39768467,
+          "sha256": "172731bb9fd89a7aa8b3d1864ff3bb14a2ebc1bb86caa5c651a176bafb83f1b8",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Aberration_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Aberration_P.utoc",
+          "size": 24711,
+          "sha256": "1a848652a27c60884142734b1f3c93f11c44e509425ba9ed6973ca3592c62c7f",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Aberration_P.utoc"
+        },
+        {
+          "path": "Movies/Aberration_in.bk2",
+          "sha256": "d713181d250e16f10af4e262073dce30fd97832600f7fa45538f898b3435cbc0",
+          "original_sha256": "33b912db1dc7060a34eb82594f3598e122b4c71fe146479c4fb8a042f63eecf8",
+          "size": 1074677676,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.001",
+              "start": 10617780,
+              "size": 1074677676
+            }
+          ]
+        },
+        {
+          "path": "Movies/Aberration_out.bk2",
+          "sha256": "f714901e1dd1607512506c375a2ac59d78c6108871166102832115a58d805985",
+          "original_sha256": "6df01a88295be67a10d1e126fdd8604cd61e036a3c2f9034ae2583bd7fba9366",
+          "size": 541815144,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.001",
+              "start": 1085295529,
+              "size": 541815144
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_in.bk2",
+          "sha256": "e7a4898e596499f4bc13fc384e3270c489f458daf5025d0770fe0f11eb0e018a",
+          "original_sha256": "05f06899ca67fe0c80691785657097d09d2ec4d143bb9f8a3218c4c4f2fdc39f",
+          "size": 651382752,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 40635980,
+              "size": 651382752
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_01.bk2",
+          "sha256": "c4743e00485e86d61065b2ea055f3e2710d792efd555aabf7da3a5958f02d292",
+          "original_sha256": "6cce84b64ed9c6a4fd9ab8194709a6cc180b027a4b7dce2920ab6714c117babd",
+          "size": 222055772,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 692018813,
+              "size": 222055772
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_02.bk2",
+          "sha256": "32b3551f74a7a13597591856cd9d6988d33c97d439df5ddf552507f60ff4a9cd",
+          "original_sha256": "b378dc18d6596d1e515548f64c2327186b6090ffc4bdf46801a188d10fbc7eba",
+          "size": 211828016,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 914074666,
+              "size": 211828016
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_03.bk2",
+          "sha256": "9bfed5d0e3c32e7315e9babde83e724a7baa1e203ffee56b1aac44207743be9a",
+          "original_sha256": "068cd56b9355efe67e4fafd363ea7d9b559a485bf7c934f739ee012bb92a0fb4",
+          "size": 169321828,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 1125902763,
+              "size": 169321828
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_04.bk2",
+          "sha256": "f9f4da6c0589e5db4f18165888dd7fe47290a6110c0f472a868872e10ac13c8f",
+          "original_sha256": "4f3a22047256ad2a40b60e5e82039ce95050db37197ce6f449e45dd1961cb3cf",
+          "size": 170165660,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 1295224672,
+              "size": 170165660
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_05.bk2",
+          "sha256": "c451e83136d70e7095fb7cb0121f68b0589067660b09d4259c88ee4deccad937",
+          "original_sha256": "e44f89a862fbfaa0b776c895614ef84bc5f8d85010dc627a981134ed0551a5c4",
+          "size": 260261584,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 1465390413,
+              "size": 260261584
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_06.bk2",
+          "sha256": "b19a0603dcb9eb0bf388dfeeddbcd68bbf835586173e0daa39060c731a7298e1",
+          "original_sha256": "40eab0731b9e4c26d65192cf8cb95532b7f85e5e6c9443a947f6145e563d6082",
+          "size": 245959924,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 1725652078,
+              "size": 174347922
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 0,
+              "size": 71612002
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_07.bk2",
+          "sha256": "162016f0c9b93d832ea4d14ccd6f92438b7e632937bc4b38f43c96c88e192c2e",
+          "original_sha256": "7637acafa3a15cb1589dc60ba2a9c2b5706a63c25af1393ef75ac10d4cdfaa0b",
+          "size": 335295972,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 71612083,
+              "size": 335295972
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_08.bk2",
+          "sha256": "e3f7cca94f41bd1958ab24117d60ceebf0c4bd8a966edc6b16ca5729d9dbb1a3",
+          "original_sha256": "08173503c2f8d1ea714ed5956d606063526a369dd079b55beba64d849b3d0a1c",
+          "size": 269040936,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 406908136,
+              "size": 269040936
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_09.bk2",
+          "sha256": "bf38a22bf516fece73a1db433b37e3daa1f878b6ad93c2de0ceaf342eb7e8c14",
+          "original_sha256": "fd5fd7dafab15c7015361987caec0ee8922cd13ad7c9b2f8d4c3c4d546799acb",
+          "size": 205430008,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 675949153,
+              "size": 205430008
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_note_10.bk2",
+          "sha256": "03e7802a7dff0935be83bd9f750a681360b6afce2601a5126a4edb68b4d23f51",
+          "original_sha256": "7bc270627d2061dbcf2a66c765e68c12cc8487e412448f7e18094b015adae8e0",
+          "size": 336268420,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 881379242,
+              "size": 336268420
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Aberration_out.bk2",
+          "sha256": "5ac51cd7249a8a4f0764836301f532a98f06d2557eacae1e4d37a25ea40e81df",
+          "original_sha256": "7e234d2674ae8713ff7ec970a5ebd92752337ba45606654c67a7a0b4c5a8e762",
+          "size": 700699744,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.007",
+              "start": 1217647739,
+              "size": 682352261
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 0,
+              "size": 18347483
+            }
+          ]
+        }
+      ],
+      "size": 5433996961
+    },
+    "Extinction": {
+      "title": "Extinction",
+      "audio_assets": 66,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_Extinction_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Extinction_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Extinction_P.ucas",
+          "size": 39753094,
+          "sha256": "5ddc3e9555b5d29e3440b10a726968afd0e1458dd92b9882d7d637f45206ffb7",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Extinction_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Extinction_P.utoc",
+          "size": 22664,
+          "sha256": "04d7706b2d857cfee8fbde6c4fed1a7d2d04253737f17d90b9afa8bfc2ec9470",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Extinction_P.utoc"
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_01.bk2",
+          "sha256": "7dcf3a9814d7512ec6b8cd37d889908350bb4790aaf413a815c6f1949b1dd0da",
+          "original_sha256": "760c7be3f2a737f59e2c3edfead98256bcda860cd023f6bdbdbeab6a0ad8de8e",
+          "size": 359525948,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 18347564,
+              "size": 359525948
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_02.bk2",
+          "sha256": "96ad5aac425546f85f627e9e4bd0d426b40c97c36cc74fddb3a4b6b96395b16f",
+          "original_sha256": "863fbb5c1bce75a553e0046dd5c5710541ce42607db55893df4eb90979518fe9",
+          "size": 256243108,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 377873593,
+              "size": 256243108
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_03.bk2",
+          "sha256": "0d3239e11b2e7b4fc13413cdf496d3b39301dcdad27e562471fa9b3c71902ae1",
+          "original_sha256": "20b9d22e2026d6de33e125a371f3ffc647be054cd263b5b83b24e42938084b28",
+          "size": 367277372,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 634116782,
+              "size": 367277372
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_04.bk2",
+          "sha256": "c3d3de3427921b47c5e01e0d5a1eb60f249b3de52a0c7985aa2eb66dedfef877",
+          "original_sha256": "76446caa1da92e8d74f76bd8f10a9b97b8635f08a22da3a2b1e783b5446b0e5b",
+          "size": 403784268,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 1001394235,
+              "size": 403784268
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_05.bk2",
+          "sha256": "14617c0bbcfc037f88352768e3fbf54cfb5d48d33922add943f7aabbf1a6e1b9",
+          "original_sha256": "9912337f52f1c58b3c05eed731b72eecad1f3679dabe3f10fc9876642e8bf2d0",
+          "size": 228417996,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 1405178584,
+              "size": 228417996
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_06.bk2",
+          "sha256": "9356dfd67180d012092c55a3285f0b936f02c25ff9db0111c9092f4f708e8826",
+          "original_sha256": "9637f7cb965abe0717e11c8e5c017605b87805712cdad971d49965c85f0be5d5",
+          "size": 332888788,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.008",
+              "start": 1633596661,
+              "size": 266403339
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 0,
+              "size": 66485449
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_07.bk2",
+          "sha256": "0e9b481dce0fd44eadb2cf2ab75cef1a8f8994f8d9c2bc41bb869e7911448f2f",
+          "original_sha256": "dc58913cf4667b5caccab2871937d9fedec258d1367413ed611801b974613323",
+          "size": 270001792,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 66485530,
+              "size": 270001792
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_08.bk2",
+          "sha256": "010adfd5c40442b5bd47f208e25e2f38aea60eebc05079f36c8b57e7cdd9ca8d",
+          "original_sha256": "b1e77219a043fa3dc06d5f6087f14b85e6c697b573371d243f7650158fac1f9d",
+          "size": 285446972,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 336487403,
+              "size": 285446972
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_09.bk2",
+          "sha256": "8ad35fc0d9b91dd217dea4d12648943b7abe5a74b612e92fc8bba2ca39a13a34",
+          "original_sha256": "d1a3d82d8b710988cdbf1452dee93cbff17f900bcf6ee901153fbacca7d47e04",
+          "size": 335066332,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 621934456,
+              "size": 335066332
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Extinction_note_10.bk2",
+          "sha256": "4c4da0e7e0771a035eebd1daf13e1c81fd390b1b911f3c67a9eab11cf9258166",
+          "original_sha256": "77c0e5b7d27151b431a9a5dc5d7c701381351695986038a6a5816f73c24af0f5",
+          "size": 441502580,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 957000869,
+              "size": 441502580
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Wasteland_in.bk2",
+          "sha256": "0b579cc5347943add80475ee95703d2998d9b931900a0d4f1e15768b54fee840",
+          "original_sha256": "9dec77ca1136a59f299f9a7dfd07163c7dd5e86ea4091b0eb53b57a49ab02c1d",
+          "size": 675294296,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.011",
+              "start": 1558975242,
+              "size": 341024758
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.012",
+              "start": 0,
+              "size": 334269538
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_Wasteland_out.bk2",
+          "sha256": "89f05af89a495a5ff8eba836242877d06c8005b47f492ac7f368eaa581fd2358",
+          "original_sha256": "379d56eb3ab95ec6f464e6bc1f74316563d6c0569eacd5ccd7976d90a50ba894",
+          "size": 771411380,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.012",
+              "start": 334269614,
+              "size": 771411380
+            }
+          ]
+        },
+        {
+          "path": "Movies/Extinction_in.bk2",
+          "sha256": "8dd09a0d9a24e34119691e4fb78cc0e9bc1705a093b63932d49c5bc2122d8623",
+          "original_sha256": "2fb18b77b9547563616b9bd511b4c99966478da771f1debd1b6a26509fc6c271",
+          "size": 442924968,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.013",
+              "start": 981107342,
+              "size": 442924968
+            }
+          ]
+        },
+        {
+          "path": "Movies/ExtinctionEnding-FH.bk2",
+          "sha256": "d83585c0427df0de572dcb37f8ede111878f1d3f2cdd54ffd96a1e6a414d3c21",
+          "original_sha256": "ddcf3f9ad80201e74c3dc73e7600f1ba96b70b898e6beb819d836dcc4b77657b",
+          "size": 888744476,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.012",
+              "start": 1105681072,
+              "size": 794318928
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.013",
+              "start": 0,
+              "size": 94425548
+            }
+          ]
+        },
+        {
+          "path": "Movies/ExtinctionEnding-MH.bk2",
+          "sha256": "197737536e7cba18fb1af8af7de3de07f1a72b0911ce3a142f35ba245507a980",
+          "original_sha256": "e1f06a50cb6c464108bd4887285bdcfd9d7adf60e3f6704f7bc27b8536d02ed6",
+          "size": 886681644,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.013",
+              "start": 94425626,
+              "size": 886681644
+            }
+          ]
+        }
+      ],
+      "size": 6984988025
+    },
+    "TheIsland": {
+      "title": "The Island",
+      "audio_assets": 81,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_TheIsland_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_TheIsland_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_TheIsland_P.ucas",
+          "size": 49795293,
+          "sha256": "ceda68e62e1093828078db071905463ade422b5578b78d458003203a10b74c7a",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_TheIsland_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_TheIsland_P.utoc",
+          "size": 27184,
+          "sha256": "3f34aaacd57fac1648de318c8475845dddf999c889170d3c564749c28134e5b4",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_TheIsland_P.utoc"
+        },
+        {
+          "path": "Movies/BTT_TheIsland_in.bk2",
+          "sha256": "1a8978369a6b0b41eaea992b26499555f70a6ed4f72d04b0311a94eaa4d4e715",
+          "original_sha256": "22ed0a5c16bb4d0bfc43dc89dddf2451e3f828f88c97f3e0ec6ef30580a1028b",
+          "size": 693854920,
+          "previous_sha256": [
+            "1a8978369a6b0b41eaea992b26499555f70a6ed4f72d04b0311a94eaa4d4e715"
+          ],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.011",
+              "start": 551533007,
+              "size": 693854920
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_TheIsland_out.bk2",
+          "sha256": "ebe4edc804bc2894d129edbbcf1217b5b951db7d4010af438156717736a61d7e",
+          "original_sha256": "951d6d7d542cf6b173982692eaabc616e858ad3c0b03aae548f0f35ec4477d38",
+          "size": 313587164,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.011",
+              "start": 1245388003,
+              "size": 313587164
+            }
+          ]
+        },
+        {
+          "path": "Movies/TheIsland_in.bk2",
+          "sha256": "c2372c5aaecb519af03cc7b580c0f62a9ad24c89b09bdab3698910cf4e241cd5",
+          "original_sha256": "ae2ea6e9b37b80772f1a61bd55793b16c03d943484fb0c1f8594245417cda42a",
+          "size": 732184652,
+          "previous_sha256": [
+            "c2372c5aaecb519af03cc7b580c0f62a9ad24c89b09bdab3698910cf4e241cd5"
+          ],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.015",
+              "start": 506641008,
+              "size": 732184652
+            }
+          ]
+        },
+        {
+          "path": "Movies/TheIsland_out.bk2",
+          "sha256": "7f96cf4aefb5a981ca545dfcb5d3ee6f60f815e8a0c8442acbc9f20c1df7d55d",
+          "original_sha256": "8fc4bc1f9d5d0b296ad52e12cb6b213d0ab237a0be2a75e9634327cbd74e9f43",
+          "size": 801355356,
+          "previous_sha256": [
+            "7f96cf4aefb5a981ca545dfcb5d3ee6f60f815e8a0c8442acbc9f20c1df7d55d"
+          ],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.015",
+              "start": 1238825732,
+              "size": 661174268
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.016",
+              "start": 0,
+              "size": 140181088
+            }
+          ]
+        }
+      ],
+      "size": 2590804916
+    },
+    "ScorchedEarth": {
+      "title": "Scorched Earth",
+      "audio_assets": 72,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_ScorchedEarth_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_ScorchedEarth_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_ScorchedEarth_P.ucas",
+          "size": 40649712,
+          "sha256": "73b64c8e8980d87bab03801a52973ef80ae9d45f4c2843802f6631455c33c0e9",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_ScorchedEarth_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_ScorchedEarth_P.utoc",
+          "size": 24524,
+          "sha256": "7b08fd6abe1e0a2990c7c49569ade459b0e7f9afe81d0f44aa4fdd92e7fe50f0",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_ScorchedEarth_P.utoc"
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_in.bk2",
+          "sha256": "76f70693a9c1dad8656871d317dba70dc9408f31515cd4f2adbd23c3204fdb3f",
+          "original_sha256": "3cb3e2eeb55b42064827ab97a5c26aeebc104ec8c18fc747861e4938ff0ff664",
+          "size": 344815840,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 1398503528,
+              "size": 344815840
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_01.bk2",
+          "sha256": "8c43a40ac3dab162f8abe89dab780b1451dbdba1a4e5f1a4b78e8dd99ea1f83a",
+          "original_sha256": "4ac2d862ca1c53a3a0ee26fb49ee2c1488369623dd2b133fb5d8b5939f49f1a8",
+          "size": 216334952,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.009",
+              "start": 1743319452,
+              "size": 156680548
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 0,
+              "size": 59654404
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_02.bk2",
+          "sha256": "ff5eb890aef1045a6aad6343b7403e9376315adb9e0712f3511c52c7b87f94f5",
+          "original_sha256": "655944db8095792e1fdb521b2ee1e2015b67ac3b11ff6903931761a8b49bceb7",
+          "size": 211864888,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 59654488,
+              "size": 211864888
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_03.bk2",
+          "sha256": "07068b7a552a98156674de04123308c1a7cc3a6cfe0828c8928aa949c93448d6",
+          "original_sha256": "fc7af16dc9ae1dd2bb8231cbd5313d8a7b02b1f553684cbc9fa61b60040f8807",
+          "size": 207225852,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 271519460,
+              "size": 207225852
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_04.bk2",
+          "sha256": "4fcd8532f333afe53f6bf4b6724a01eed712c5e9433b10ca7b8be26c2d6a9a6f",
+          "original_sha256": "677d47fe3ed53b444734d184d796fa3cc567fcf2a0321227faa7e24cf2de18d2",
+          "size": 322610920,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 478745396,
+              "size": 322610920
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_05.bk2",
+          "sha256": "a66e042b4705bbf158c61c3fac255bc0de6e281423ae519d24766c9fd2f8951b",
+          "original_sha256": "6a52a69641f0e79a6799cc22fdf96a9a0534979298d395022fda39d89b379236",
+          "size": 204326084,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 801356400,
+              "size": 204326084
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_06.bk2",
+          "sha256": "a13680a8682a4bca6dd4929940b58fe58556358ed267ddac876703fdc8984a16",
+          "original_sha256": "fe14346bf9298f4c860d049a288365f04860bac75e8a291a87107b94c8fa3018",
+          "size": 185313128,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 1005682568,
+              "size": 185313128
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_07.bk2",
+          "sha256": "a9c3cd797dc10946d5b310a95b6463ee2fe8f56d4767bd0d9e9058c601c992b9",
+          "original_sha256": "dd4498e333fa54b03e8658561eb754a0b1941a5ea0212263b2177dd5534d7d16",
+          "size": 182075556,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 1190995780,
+              "size": 182075556
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_08.bk2",
+          "sha256": "ea4876f90e194f127d230fecc7ea30ba9e544a324786ac8ce605b9660fb160cd",
+          "original_sha256": "76a496d37e04cd225f8608818e7cffee7a927c7095b2356ff811012ff9fc8594",
+          "size": 204361560,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 1373071420,
+              "size": 204361560
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_09.bk2",
+          "sha256": "bb4089e5fda035146202eb8d607920596b29db3670ef7425306e25940e3a457d",
+          "original_sha256": "dbfb6b8ec87a558f18d699783900935b5b021ca53e54733d4588bf0b22bc9c73",
+          "size": 228041992,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 1577433064,
+              "size": 228041992
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_note_10.bk2",
+          "sha256": "ccbbae01c5bb37c6e6a8cfe51d73c0e07933237d98db588355f5c4f791846622",
+          "original_sha256": "0b4cec5f9f60523b6c50c2d0abbcf0148ac1cf96576fb8f66928599af6a9d204",
+          "size": 248528320,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.010",
+              "start": 1805475140,
+              "size": 94524860
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.011",
+              "start": 0,
+              "size": 154003460
+            }
+          ]
+        },
+        {
+          "path": "Movies/BTT_ScorchedEarth_out.bk2",
+          "sha256": "0a1a0518534708fcba1794478e43fb8bf1460b4ada751051a0fa3405aac6cf89",
+          "original_sha256": "1af6a83a517403d7d8387242775aae41d10613fa02f8a1c36d45b912b99aa62b",
+          "size": 397529392,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.011",
+              "start": 154003540,
+              "size": 397529392
+            }
+          ]
+        },
+        {
+          "path": "Movies/ScorchedEarth_In.bk2",
+          "sha256": "c157291677ffbaa2fbbce266bf79eda0363aff11be7b7ed9dcac882bf3c65f89",
+          "original_sha256": "274d3cc109c6894796e108dfe0d1b23d7682fe765e42f071ceb0aaac614c9f51",
+          "size": 345300588,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.014",
+              "start": 1583834513,
+              "size": 316165487
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.015",
+              "start": 0,
+              "size": 29135101
+            }
+          ]
+        },
+        {
+          "path": "Movies/ScorchedEarth_out.bk2",
+          "sha256": "598be50766d41463cdedb4cf59e03b2545fb1e95618a5c48c5aa5440b13edea2",
+          "original_sha256": "838f912da72d671a2c2455d402ddbb75b14b38035fa93c12f43e2bdd5fff4ccf",
+          "size": 477505760,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.015",
+              "start": 29135177,
+              "size": 477505760
+            }
+          ]
+        }
+      ],
+      "size": 3816509415
+    },
+    "Genesis2": {
+      "title": "Genesis: Part 2",
+      "audio_assets": 377,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis2_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis2_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis2_P.ucas",
+          "size": 31863694,
+          "sha256": "e38aa74c4d382308e3aa513b35fca7f4681167ffca99c378385e6782a32d7dd7",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis2_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_Genesis2_P.utoc",
+          "size": 92668,
+          "sha256": "54bbb4bfd4b783a66a0a8a8c08131278e1796e0f1525f2953855a3ac3fad5e76",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_Genesis2_P.utoc"
+        }
+      ],
+      "size": 31956709
+    },
+    "LostColony": {
+      "title": "Lost Colony",
+      "audio_assets": 10,
+      "files": [
+        {
+          "path": "Paks/z_ASARussianVoice_LostColony_P.pak",
+          "size": 347,
+          "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_LostColony_P.pak"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_LostColony_P.ucas",
+          "size": 7970166,
+          "sha256": "0c7d6c3cda9439d28f8f9819f1587958d83cf9d88b512835620cf8eccf4db168",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_LostColony_P.ucas"
+        },
+        {
+          "path": "Paks/z_ASARussianVoice_LostColony_P.utoc",
+          "size": 3969,
+          "sha256": "d1a611c0178b92f64773db037bd474295ea536f53cb4b903927f83fd81896175",
+          "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.2.0/z_ASARussianVoice_LostColony_P.utoc"
+        }
+      ],
+      "size": 7974482
+    },
+    "BobTales": {
+      "title": "Дополнительные истории Боба",
+      "audio_assets": 0,
+      "files": [
+        {
+          "path": "Movies/BobsTrueTales_Part1_Intro.bk2",
+          "sha256": "3d9ee5fb2b3ce0a5922984624ed6b0e9114f31358a4314b1645d98a70851d81e",
+          "original_sha256": "2e42a4c291b09453fbe9cc58c5dfcae3fd23520711f9a19c936303be13a99f77",
+          "size": 1534739028,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.001",
+              "start": 1627110757,
+              "size": 272889243
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.002",
+              "start": 0,
+              "size": 1261849785
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_1.bk2",
+          "sha256": "f0d8a511954ee6671ac2fffce0e26e8f061f24907004cf3dcb8dd8419965eedd",
+          "original_sha256": "46e17a1028e0d978aff70230f865f4489abc07faa529ae391570728a56b12937",
+          "size": 491543712,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.002",
+              "start": 1261849871,
+              "size": 491543712
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_2.bk2",
+          "sha256": "ea97b33ea13bdf903848d4d018d70fe9ecd7d567efd447d60b01aa3c4dd27534",
+          "original_sha256": "87629982d0761aded39326e40da5ba5bd60f72b037c2909071e6cf9c31fbfc87",
+          "size": 212522524,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.002",
+              "start": 1753393669,
+              "size": 146606331
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 0,
+              "size": 65916193
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_3.bk2",
+          "sha256": "30e4dfc6f86153cdd6f46ea35479d6b5efba50d8648a7242fd767f037140ba13",
+          "original_sha256": "5132186a896ceb2f625dd64732dbabda80c5b4bf9efeaebc9a6692de29680845",
+          "size": 191926288,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 65916279,
+              "size": 191926288
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_4.bk2",
+          "sha256": "50fa00a383da07d84cde25bae95f35d6400ce54ae82cb2cb37756ea4bb881542",
+          "original_sha256": "d9c388377bd1ebce726ebafe85883e12be4eafc9e4b57883c2901a5df6337f2b",
+          "size": 208671800,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 257842653,
+              "size": 208671800
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_5.bk2",
+          "sha256": "c0f75dd69c8c39e59b17e094c78cdf4fb61ee69ec14cbb58a729a2f55cecef43",
+          "original_sha256": "079352e3bc4921bf3f77c130200f98954f24f6ee6f47d7133475ea1e780c94cc",
+          "size": 252062160,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 466514539,
+              "size": 252062160
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_6.bk2",
+          "sha256": "ba9b53f6188fab3c08ab59c915e4aa093d7174a390e9ec562c00c62dde92dda4",
+          "original_sha256": "31b433336312b40f240f2da3373a0b89fd7961c958de594b0d38b93fc93f2962",
+          "size": 297972048,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 718576785,
+              "size": 297972048
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_8.bk2",
+          "sha256": "ffa6334380800d22594589a0e9532ae055d51eb78630dfd57c0e1769d05fcafa",
+          "original_sha256": "a10665dc722957106da4c5f27e676dc946b50f139864e32842a56d1429d8808e",
+          "size": 590529536,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 1016548919,
+              "size": 590529536
+            }
+          ]
+        },
+        {
+          "path": "Movies/BobsTrueTales_Part1_Outro_Full.bk2",
+          "sha256": "12b5844177aefa271438c662ce1f10053e7c50601abbdbef8ebe3e53241260bd",
+          "original_sha256": "266e3b30b4dfb78294a1b7d49497179c05888851cd4a5c66e565343905df968b",
+          "size": 4133557340,
+          "previous_sha256": [],
+          "ranges": [
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.003",
+              "start": 1607078564,
+              "size": 292921436
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.004",
+              "start": 0,
+              "size": 1900000000
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.005",
+              "start": 0,
+              "size": 1900000000
+            },
+            {
+              "url": "https://github.com/lacost2001/ark-asa-russian-voice/releases/download/v1.0.0/ASA-Russian-Voice-1.0.0.zip.006",
+              "start": 0,
+              "size": 40635904
+            }
+          ]
+        }
+      ],
+      "size": 7913524436
+    },
+    "Ragnarok": {
+      "title": "Ragnarok (досье)",
+      "audio_assets": 0,
+      "files": [],
+      "size": 0
+    },
+    "Valguero": {
+      "title": "Valguero (досье)",
+      "audio_assets": 0,
+      "files": [],
+      "size": 0
+    },
+    "CrystalIsles": {
+      "title": "Crystal Isles (досье)",
+      "audio_assets": 0,
+      "files": [],
+      "size": 0
+    },
+    "LostIsland": {
+      "title": "Lost Island (досье)",
+      "audio_assets": 0,
+      "files": [],
+      "size": 0
+    },
+    "Fjordur": {
+      "title": "Fjordur (досье)",
+      "audio_assets": 0,
+      "files": [],
+      "size": 0
+    }
+  },
+  "legacy_files": [
+    {
+      "path": "Paks/z_ASARussianVoice_P.pak",
+      "sha256": "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd",
+      "size": 347,
+      "previous_sha256": [
+        "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd"
+      ]
+    },
+    {
+      "path": "Paks/z_ASARussianVoice_P.ucas",
+      "sha256": "9a397822dba846a50d88f6b77c3781bcb8f7bf1b880af03bd1bb5ce33e0e7ecf",
+      "size": 436853554,
+      "previous_sha256": [
+        "7c93d5e12c438a605f482a7d762a45239fda2e2000d6be17376750c3a558ad72"
+      ]
+    },
+    {
+      "path": "Paks/z_ASARussianVoice_P.utoc",
+      "sha256": "181679fa43142916c305806323ab063c72096ac3ddb624b0c47cf96cb0dd7b89",
+      "size": 478710,
+      "previous_sha256": [
+        "18daae157aecbca35a06c4791e32649716e9bb8f87e5aa72fdc71f67343ab198"
+      ]
+    }
+  ]
+}

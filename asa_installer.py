@@ -89,50 +89,76 @@ def restore(game,progress=print):
 def gui(package):
  import tkinter as tk
  from tkinter import ttk,filedialog,messagebox
- root=tk.Tk();root.title('ASA — Русская озвучка');root.geometry('800x620');root.configure(bg='#101c28')
- style=ttk.Style();style.theme_use('clam');style.configure('TButton',font=('Segoe UI',11),padding=9)
- tk.Label(root,text='ARK  /  RUSSIAN VOICES',fg='#57d6c7',bg='#101c28',font=('Segoe UI',12,'bold')).pack(anchor='w',padx=28,pady=(26,6))
- tk.Label(root,text='Истории Ковчегов — по-русски',fg='white',bg='#101c28',font=('Segoe UI',23,'bold')).pack(anchor='w',padx=28)
- tk.Label(root,text='Survival Ascended  •  Записки, диалоги и кат-сцены',fg='#aab9ca',bg='#101c28',font=('Segoe UI',11)).pack(anchor='w',padx=28,pady=(6,24))
- tk.Label(root,text='Папка игры или библиотека Steam',fg='white',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28)
- frame=tk.Frame(root,bg='#101c28');frame.pack(fill='x',padx=28,pady=8)
- path=tk.StringVar(value='D:/SteamLibrary/steamapps/common/ARK Survival Ascended');ttk.Entry(frame,textvariable=path,font=('Segoe UI',11)).pack(side='left',fill='x',expand=True)
- ttk.Button(frame,text='Выбрать',command=lambda:path.set(filedialog.askdirectory() or path.get())).pack(side='right',padx=(10,0))
- tk.Label(root,text='Папка загрузки (нужно около 60 ГБ для частей и распаковки)',fg='white',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28,pady=(12,0))
- cache=tk.StringVar(value=str(Path.home()/'Downloads/ASA-Russian-Voice-Download'))
- download_frame=tk.Frame(root,bg='#101c28');download_frame.pack(fill='x',padx=28,pady=8)
- ttk.Entry(download_frame,textvariable=cache,font=('Segoe UI',11)).pack(side='left',fill='x',expand=True)
- ttk.Button(download_frame,text='Выбрать',command=lambda:cache.set(filedialog.askdirectory() or cache.get())).pack(side='right',padx=(10,0))
- status=tk.StringVar(value='Версия 1.1.0. Скачаю 16 частей, проверю и распакую автоматически. Оригиналы игры сохраняются.')
- tk.Label(root,textvariable=status,fg='#d8e4ec',bg='#101c28',wraplength=700,justify='left',font=('Segoe UI',10)).pack(anchor='w',padx=28,pady=20)
- bar=ttk.Progressbar(root,mode='indeterminate');bar.pack(fill='x',padx=28)
- buttons=tk.Frame(root,bg='#101c28');buttons.pack(fill='x',padx=28,pady=24)
+ from asa_maps import chosen_files,prepare_maps,validate_legacy,deactivate_legacy
+ resources=Path(getattr(sys,'_MEIPASS',Path(__file__).parent))
+ catalog=json.loads((resources/'maps.json').read_text('utf-8'))
+ settings_path=Path(os.environ.get('LOCALAPPDATA',str(Path.home())))/'ASA-Russian-Voice/settings.json'
+ try:settings=json.loads(settings_path.read_text('utf-8'))
+ except Exception:settings={}
+ root=tk.Tk();root.title('ASA — Русская озвучка 1.2.0');root.geometry('820x780');root.minsize(740,720);root.configure(bg='#101c28')
+ style=ttk.Style();style.theme_use('clam');style.configure('TButton',font=('Segoe UI',10),padding=8)
+ tk.Label(root,text='Истории Ковчегов — по-русски',fg='white',bg='#101c28',font=('Segoe UI',22,'bold')).pack(anchor='w',padx=24,pady=(20,4))
+ tk.Label(root,text='Survival Ascended  •  Скачиваются только выбранные карты',fg='#57d6c7',bg='#101c28',font=('Segoe UI',11)).pack(anchor='w',padx=24,pady=(0,12))
  controls=[]
+ def folder(label,initial):
+  tk.Label(root,text=label,fg='white',bg='#101c28').pack(anchor='w',padx=24)
+  row=tk.Frame(root,bg='#101c28');row.pack(fill='x',padx=24,pady=6);var=tk.StringVar(value=initial)
+  field=ttk.Entry(row,textvariable=var);field.pack(side='left',fill='x',expand=True)
+  btn=ttk.Button(row,text='Выбрать',command=lambda:var.set(filedialog.askdirectory() or var.get()));btn.pack(side='right',padx=(8,0));controls.extend([field,btn]);return var
+ path=folder('Папка ASA или библиотека Steam',settings.get('game','D:/SteamLibrary/steamapps/common/ARK Survival Ascended'))
+ cache=folder('Папка загрузки',settings.get('cache',str(Path.home()/'Downloads/ASA-Voice-Maps')))
+ frame=tk.Frame(root,bg='#182939');frame.pack(fill='both',expand=True,padx=24,pady=12)
+ canvas=tk.Canvas(frame,bg='#182939',highlightthickness=0);scroll=ttk.Scrollbar(frame,orient='vertical',command=canvas.yview);canvas.configure(yscrollcommand=scroll.set)
+ scroll.pack(side='right',fill='y');canvas.pack(side='left',fill='both',expand=True);inner=tk.Frame(canvas,bg='#182939');canvas.create_window((0,0),window=inner,anchor='nw');inner.bind('<Configure>',lambda e:canvas.configure(scrollregion=canvas.bbox('all')))
+ selected={};total=tk.StringVar()
+ def estimate():
+  keys=[k for k,v in selected.items() if v.get()]
+  amount=sum(x['size'] for x in chosen_files(catalog,keys)) if keys else 0
+  total.set(f'Выбрано: {amount/1024**3:.2f} ГБ. Уже скачанные файлы используются повторно.')
+ order=['TheIsland','ScorchedEarth','Aberration','Extinction','Genesis1','Genesis2','LostColony','BobTales','Ragnarok','Valguero','CrystalIsles','LostIsland','Fjordur']
+ for key in order:
+  if key not in catalog['groups']:continue
+  group=catalog['groups'][key];var=tk.BooleanVar(value=key in settings.get('maps',['TheIsland']));selected[key]=var
+  check=tk.Checkbutton(inner,text=f"{group['title']} — {group['size']/1024**3:.2f} ГБ",variable=var,command=estimate,bg='#182939',fg='white',selectcolor='#284354',activebackground='#182939',activeforeground='white',font=('Segoe UI',11),anchor='w');check.pack(fill='x',padx=12,pady=2);controls.append(check)
+ estimate();tk.Label(root,textvariable=total,fg='#57d6c7',bg='#101c28').pack(anchor='w',padx=24)
+ tk.Label(root,text='Общие реплики подключаются автоматически. Снятие галочки не удаляет установленную карту.',fg='#aab9ca',bg='#101c28',wraplength=760,justify='left').pack(anchor='w',padx=24,pady=5)
+ status=tk.StringVar(value='Закройте ASA перед установкой. Оригиналы сохраняются.');tk.Label(root,textvariable=status,fg='white',bg='#101c28',wraplength=760,justify='left').pack(anchor='w',padx=24,pady=8)
+ bar=ttk.Progressbar(root,mode='indeterminate');bar.pack(fill='x',padx=24)
+ buttons=tk.Frame(root,bg='#101c28');buttons.pack(fill='x',padx=24,pady=16)
+ busy=[False]
  def run(action):
-  raw=path.get();cache_path=cache.get()
-  for b in controls:b.configure(state='disabled')
+  raw=path.get();cache_path=cache.get();keys=[k for k,v in selected.items() if v.get()]
+  if action=='install' and not keys:messagebox.showerror('Выберите карту','Отметьте хотя бы одну карту.');return
+  busy[0]=True
+  for widget in controls:widget.configure(state='disabled')
   bar.start()
   def progress(text):root.after(0,status.set,text)
   def worker():
    try:
+    game=locate_game(raw)
+    if running():raise RuntimeError('Закройте ASA перед установкой.')
+    settings_path.parent.mkdir(parents=True,exist_ok=True);atomic_json(settings_path,dict(game=raw,cache=cache_path,maps=keys))
     if action=='install':
-     game=locate_game(raw)
-     if running():raise RuntimeError('Закройте ASA перед установкой.')
-     from asa_download import prepare
-     payload=package if (package/'manifest.json').exists() else prepare(Path(cache_path),progress)
+     validate_legacy(catalog,game)
+     payload=prepare_maps(catalog,keys,Path(cache_path),game,progress)
      install(payload,game,progress)
-    else:restore(Path(raw),progress)
-   except Exception as e:root.after(0,messagebox.showerror,'Установка остановлена',str(e));progress('Операция остановлена. Причина показана в сообщении.')
+     deactivate_legacy(catalog,game)
+     progress('Готово. Выбранные карты установлены. Можно запускать ASA.')
+    else:restore(game,progress)
+   except Exception as error:
+    text=str(error);root.after(0,lambda t=text:messagebox.showerror('Операция остановлена',t));progress(text)
    finally:
     def done():
-     bar.stop()
-     for b in controls:b.configure(state='normal')
+     busy[0]=False;bar.stop()
+     for widget in controls:widget.configure(state='normal')
     root.after(0,done)
   threading.Thread(target=worker,daemon=True).start()
- for label,action in [('Установить / обновить','install'),('Вернуть оригинал','restore')]:
-  b=ttk.Button(buttons,text=label,command=lambda a=action:run(a));b.pack(side='left',padx=(0,12));controls.append(b)
- tk.Label(root,text='Закройте игру. Для загрузки нужен интернет. Повторный запуск продолжит прерванную загрузку.',fg='#8799ab',bg='#101c28',font=('Segoe UI',10)).pack(anchor='w',padx=28)
- root.mainloop()
+ for label,action in [('Скачать / установить выбранное','install'),('Вернуть все оригиналы','restore')]:
+  button=ttk.Button(buttons,text=label,command=lambda a=action:run(a));button.pack(side='left',padx=(0,10));controls.append(button)
+ def close():
+  if busy[0]:messagebox.showinfo('Операция выполняется','Дождитесь завершения операции.');return
+  root.destroy()
+ root.protocol('WM_DELETE_WINDOW',close);root.mainloop()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--game',type=Path);p.add_argument('--package',type=Path);p.add_argument('--originals',type=Path);p.add_argument('--restore',action='store_true');a=p.parse_args()
  package=a.package or (Path(sys.executable).parent if getattr(sys,'frozen',False) else Path(__file__).parent/'release/ASA-Russian-Voice')
